@@ -105,4 +105,13 @@ public class Player : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
         }
     }
+    //NOTE THIS IS FOR COLLISION TRAP
+    private void OnCollisionEnter(Collision other)
+    {
+    if (other.gameObject.name == "X")
+        {
+          Application.LoadLevel(Application.loadedLevel);
+        }
+    }
 }
+
