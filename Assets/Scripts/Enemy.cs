@@ -32,6 +32,10 @@ public class Enemy : MonoBehaviour
             {
                 gameObject.SetActive(false);
                 Destroy(gameObject);
+                //m_audioSource.Play();
+                ScorePoint.Score = ScorePoint.Score + 1;
+                ScoreControl.Score++;
+                
             }
         }
     }

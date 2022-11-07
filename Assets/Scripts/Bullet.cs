@@ -45,7 +45,9 @@ public class Bullet : MonoBehaviour
             {
     
                 SceneManager.LoadScene(nextScene);
+
             }
         }
     }
+    
 }
