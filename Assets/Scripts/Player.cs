@@ -106,12 +106,12 @@ public class Player : MonoBehaviour
         }
     }
     //NOTE THIS IS FOR COLLISION TRAP
-    private void OnCollisionEnter(Collision other)
-    {
-    if (other.gameObject.name == "X")
-        {
-          Application.LoadLevel(Application.loadedLevel);
-        }
-    }
+    //private void OnCollisionEnter(Collision other)
+    //{
+    //if (other.gameObject.name == "X")
+        //{
+          //Application.LoadLevel(Application.loadedLevel);
+        //}
+    //}
 }
 
