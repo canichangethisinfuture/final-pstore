@@ -6,7 +6,7 @@ public class Barrier : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Bullet") 
+        if (other.tag == "bullet") 
         {
             Destroy(other.gameObject);
         }
