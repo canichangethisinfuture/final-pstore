@@ -22,5 +22,13 @@ public class Level1GameControl : MonoBehaviour
         if(Input.GetKey("f1")){
             SceneManager.LoadScene(1);
         }
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            
+        }
     }
 }
+
+    
+    
+
