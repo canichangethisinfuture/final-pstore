@@ -1,19 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Level2GameControl : MonoBehaviour
 {
-    [SerializeField]GameObject panelMenu;
-    public void Congrats()
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
     {
         GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");
         
         if(enemys.Length == 0){
-            panelMenu.SetActive(true);
+            SceneManager.LoadScene(3);
+        }
+        if(Input.GetKey("f1")){
+            SceneManager.LoadScene(1);
+        }
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            
         }
     }
-    // Start is called before the first frame update
-    
-
 }
