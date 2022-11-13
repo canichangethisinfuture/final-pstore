@@ -4,7 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Level1GameControl : MonoBehaviour
+
 {
+    public GameObject PanelMenu;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,9 +18,11 @@ public class Level1GameControl : MonoBehaviour
     void Update()
     {
         GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");
-        
+                
         if(enemys.Length == 0){
             SceneManager.LoadScene(2);
+            PanelMenu.SetActive(true);
+            
         }
         if(Input.GetKey("f1")){
             SceneManager.LoadScene(1);
